@@ -29,11 +29,16 @@ class GameScene: SKScene {
     // Game over detection
     var gameOver = false
     
+    let path = UIBezierPath()
+    
     override func sceneDidLoad() {
         
         self.lastUpdateTime = 0
         
         entityManager = EntityManager(scene: self)
+        
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addQuadCurve(to: CGPoint(x: 800, y: 0), controlPoint: CGPoint(x: size.height/2, y: size.width/2))
     }
     
     override func didMove(to view: SKView) {
@@ -106,6 +111,14 @@ class GameScene: SKScene {
         }
         entityManager.add(aiCastle)
         
+        let sol = Sun(imageName: "sol", entityManager: entityManager)
+        if let spriteComponent = sol.component(ofType: SpriteComponent.self){
+            spriteComponent.node.position = CGPoint(x: 0, y: 0)
+        }
+        entityManager.add(sol)
+        
+        sol.component(ofType: SpriteComponent.self)?.node.run(SKAction.follow(path.cgPath, duration: 10.0))
+        
     }
     
     func quirkPressed() {
@@ -129,7 +142,7 @@ class GameScene: SKScene {
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        
+    
     }
     
     func touchUp(atPoint pos : CGPoint) {

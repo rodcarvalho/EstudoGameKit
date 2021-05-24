@@ -27,6 +27,7 @@
 		00AB331C265C2C5600F4239C /* spawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00AB3310265C2C5600F4239C /* spawn.wav */; };
 		00AB331D265C2C5600F4239C /* pew2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00AB3311265C2C5600F4239C /* pew2.wav */; };
 		00AB331E265C2C5600F4239C /* bigHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00AB3312265C2C5600F4239C /* bigHit.wav */; };
+		00AB3320265C333E00F4239C /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB331F265C333E00F4239C /* Sun.swift */; };
 		00B2F08E265832A100E8F41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2F08D265832A100E8F41A /* AppDelegate.swift */; };
 		00B2F094265832A200E8F41A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2F093265832A200E8F41A /* GameScene.swift */; };
 		00B2F096265832A200E8F41A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2F095265832A200E8F41A /* GameViewController.swift */; };
@@ -60,6 +61,7 @@
 		00AB3310265C2C5600F4239C /* spawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spawn.wav; sourceTree = "<group>"; };
 		00AB3311265C2C5600F4239C /* pew2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pew2.wav; sourceTree = "<group>"; };
 		00AB3312265C2C5600F4239C /* bigHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bigHit.wav; sourceTree = "<group>"; };
+		00AB331F265C333E00F4239C /* Sun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
 		00B2F08A265832A100E8F41A /* EstudoGameKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstudoGameKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B2F08D265832A100E8F41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B2F093265832A200E8F41A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -115,6 +117,15 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		00AB3321265C347500F4239C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00E803A3265B3C8E00CE47B3 /* GameScene.sks */,
+				00B2F093265832A200E8F41A /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		00B2F081265832A100E8F41A = {
 			isa = PBXGroup;
 			children = (
@@ -138,10 +149,9 @@
 				00AB32F3265C18C200F4239C /* Helpers */,
 				00E80379265B259200CE47B3 /* Entities */,
 				00E80378265B257D00CE47B3 /* Components */,
+				00AB3321265C347500F4239C /* Scenes */,
 				00B2F08D265832A100E8F41A /* AppDelegate.swift */,
-				00B2F093265832A200E8F41A /* GameScene.swift */,
 				00B2F095265832A200E8F41A /* GameViewController.swift */,
-				00E803A3265B3C8E00CE47B3 /* GameScene.sks */,
 				00B2F097265832A200E8F41A /* Main.storyboard */,
 				00B2F09A265832A300E8F41A /* Assets.xcassets */,
 				00B2F09C265832A300E8F41A /* Info.plist */,
@@ -167,6 +177,7 @@
 				00E8037A265B25AC00CE47B3 /* Castle.swift */,
 				00E8037C265B27F300CE47B3 /* EntityManager.swift */,
 				00AB3300265C20B900F4239C /* Quirk.swift */,
+				00AB331F265C333E00F4239C /* Sun.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -263,6 +274,7 @@
 				00E8037B265B25AC00CE47B3 /* Castle.swift in Sources */,
 				00AB32FF265C1E2100F4239C /* CastleComponent.swift in Sources */,
 				00AB3301265C20B900F4239C /* Quirk.swift in Sources */,
+				00AB3320265C333E00F4239C /* Sun.swift in Sources */,
 				00AB32F5265C18D700F4239C /* ButtonNode.swift in Sources */,
 				00AB3305265C23C100F4239C /* MoveComponent.swift in Sources */,
 				00E80377265B236200CE47B3 /* SpriteComponent.swift in Sources */,
